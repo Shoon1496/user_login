@@ -14,11 +14,6 @@ block content
           .col-sm-9
             input#fullname.form-control(type="text" placeholder="Full Name" autofocus="" value="")
         .form-group
-          label.col-sm-3.control-label(for="email") 
-           strong Email
-          .col-sm-9
-            input#email.form-control(type="email" placeholder="Email")
-        .form-group
           label.col-sm-3.control-label(for="password") 
            strong Password
           .col-sm-9
@@ -28,25 +23,6 @@ block content
            strong Confirm Password
           .col-sm-9
             input#cpassword.form-control(type="password" placeholder="Confirm password")
-        .form-group
-          label.col-sm-9.control-label(for="dob") 
-           strong Date of Birth
-          .col-sm-9
-            input#dob.form-control(type="date")
-        .form-group
-          label.col-sm-3.control-label(for="country") 
-           strong Country
-          .col-sm-9
-            select#country.form-control
-              option(value='') Please Select
-              option USA
-              option United Kingdom	
-              option Germany
-              option Denmark
-              option Ecuador
-              option Canada
-              option France
-              option Others
         .form-group
           label.control-label.col-sm-3 
            strong Gender
@@ -60,6 +36,16 @@ block content
                 label.radio-inline
                   input#maleRadio(name="gender" type="radio" value="Male")
                   | &nbsp;Male              
+        .form-group
+          label.col-sm-3.control-label(for="email") 
+           strong Email
+          .col-sm-9
+            input#email.form-control(type="email" placeholder="Email")
+        .form-group
+          label.col-sm-3.control-label(for="Phone") 
+           strong Phone Number
+          .col-sm-9
+            input#cpassword.form-control(type="number" placeholder="Phone Number")
         .form-group
           .col-sm-9.col-sm-offset-3
           <a href="users/login"><button type="submit" class="btn btn-primary btn-block(type="e")">Register</button>
